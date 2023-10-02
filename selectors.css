@@ -76,16 +76,27 @@ div:nth-of-type(3) em{
 /* Es posible que necesites investigar algunos selectores y propiedades adicionales */
 
 /* Haz que todos los checkboxes "checked" tengan un margen izquierdo de 50px */
-
+input[type="checkbox"]:checked {
+    margin-left: 50px;
+}
 
 /* Haz que todos los elementos <label> estén en MAYÚSCULAS sin cambiar el HTML (investiga cómo hacerlo) */
-
+label {
+    text-transform: uppercase;
+}
 
 /* Haz que la primera letra del elemento con id 'special' sea de color verde y tenga un tamaño de fuente de 100px */
-
+#special::first-letter {
+    color: green;
+    font-size: 100px;
+}
 
 /* Cambia el color del elemento <h1> a azul cuando se coloque el puntero del ratón sobre él */
-
+h1:hover {
+    color: blue;
+}
 
 /* Haz que los elementos <a> visitados sean de color gris */
-
+a:visited {
+    color: gray;
+}
